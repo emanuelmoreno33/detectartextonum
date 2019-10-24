@@ -1,0 +1,7 @@
+C:\Users\terre\source\repos\detectartextonum\detectartextonum\bin\Debug\detectartextonum.exe.config
+C:\Users\terre\source\repos\detectartextonum\detectartextonum\bin\Debug\detectartextonum.exe
+C:\Users\terre\source\repos\detectartextonum\detectartextonum\bin\Debug\detectartextonum.pdb
+C:\Users\terre\source\repos\detectartextonum\detectartextonum\obj\Debug\detectartextonum.csprojAssemblyReference.cache
+C:\Users\terre\source\repos\detectartextonum\detectartextonum\obj\Debug\detectartextonum.csproj.CoreCompileInputs.cache
+C:\Users\terre\source\repos\detectartextonum\detectartextonum\obj\Debug\detectartextonum.exe
+C:\Users\terre\source\repos\detectartextonum\detectartextonum\obj\Debug\detectartextonum.pdb
