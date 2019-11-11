@@ -148,7 +148,7 @@ namespace detectartextonum
                 char[] numeroseparado = numero.ToArray();
                 string encontrado = "ninguno";
                 string ladabuscar = numeroseparado[0].ToString() + numeroseparado[1].ToString() + numeroseparado[2].ToString();
-                for (int i=0; i<30;i++)
+                for (int i=0; i<50;i++)
                 {
                     if(ladabuscar == lada[i,0])
                     {
@@ -160,7 +160,7 @@ namespace detectartextonum
 
          public static string [,]  llenarlada()
         {
-            string[,] ladasdisponibles = new string[30, 3];
+            string[,] ladasdisponibles = new string[50, 3];
             ladasdisponibles[0, 0] = "615";
             ladasdisponibles[0, 1] = "Villa Alberto A. \n Alvarado A. (El Fundo Legal)";
             ladasdisponibles[0, 2] = "Baja California";
@@ -280,6 +280,87 @@ namespace detectartextonum
             ladasdisponibles[29, 0] = "662";
             ladasdisponibles[29, 1] = "Bahía de Kino \n Ejido La Victoria \n Hermosillo \n Miguel Alemán (La Doce) \n San Pedro O Saucito (San Pedro El Saucito)";
             ladasdisponibles[29, 2] = "Sonora";
+
+            ladasdisponibles[30, 0] = "614";
+            ladasdisponibles[30, 1] = "Santa Eulalia \n Chihuahua \n El Sauz \n San Andrés \n San Andrés \n Satevo";
+            ladasdisponibles[30, 2] = "Chihuahua";
+
+            ladasdisponibles[31, 0] = "621";
+            ladasdisponibles[31, 1] = "Naica \n Villa Aldama \n Julimes \n Santa Gertrudis (La Hacienda) \n Saucillo";
+            ladasdisponibles[31, 2] = "Chihuahua";
+
+            ladasdisponibles[32, 0] = "625";
+            ladasdisponibles[32, 1] = "Campo Menonita Número 106 \n Campo Número Ciento Uno Viejo \n Campo Número Cientosiete \n Campo Número Diez \n Campo Número Ocho \n Campo Número Seis y Medio B \n Campo Número Veinte \n Campo Número Veintidós \n Ciudad Cuauhtémoc \n Colonia Alvaro Obregón \n Colonia Anáhuac \n La Paz \n Lázaro Cárdenas \n San Lorenzo \n San Nicolás de Carretas \n Santa Bárbara de Tutuaca (Tutuaca) \n Santa Rosalía de Cuevas";
+            ladasdisponibles[32, 2] = "Chihuahua";
+
+            ladasdisponibles[33, 0] = "626";
+            ladasdisponibles[33, 1] = "Coyame \n Manuel Benavides \n Manuel Ojinaga";
+            ladasdisponibles[33, 2] = "Chihuahua";
+
+            ladasdisponibles[34, 0] = "627";
+            ladasdisponibles[34, 1] = "Parral";
+            ladasdisponibles[34, 2] = "Chihuahua";
+
+            ladasdisponibles[35, 0] = "628";
+            ladasdisponibles[35, 1] = "Mariano Matamoros \n Pueblito de Allende \n San Francisco del Oro \n Santa Bárbara \n Valle de Ignacio Allende";
+            ladasdisponibles[35, 2] = "Chihuahua";
+
+            ladasdisponibles[36, 0] = "629";
+            ladasdisponibles[36, 1] = "Ciudad Jiménez \n Escalón \n José Esteban Coronado \n Salaices \n Santa María \n Villa López";
+            ladasdisponibles[36, 2] = "Chihuahua";
+
+            ladasdisponibles[37, 0] = "635";
+            ladasdisponibles[37, 1] = "Areponapuchi \n Bahuichivo \n Basaseachi \n Basuchil \n Bocoyna \n Carichi \n Cerocahui \n Chinpas de Almada \n Creel \n El Terrero \n Lic. Adolfo López Mateos \n Moris \n Nonoava \n Pascual Orozco (San Isidro) \n San Francisco de Borja \n San Juanito \n San Rafael \n Santo Tomás \n Sisoguichi \n Temoris \n Tomochi \n Urique \n Uruachi \n Vicente Guerrero ";
+            ladasdisponibles[37, 2] = "Chihuahua";
+
+            ladasdisponibles[38, 0] = "639";
+            ladasdisponibles[38, 1] = "Ciudad Delicias \n Colonia Campesina \n Colonia Felipe Angeles \n Colonia Revolución \n El Molino \n Estación Consuelo \n Guadalupe Victoria \n Kilometro Noventa y Nueve \n Las Varas \n Lázaro Cárdenas \n Pedro Meoqui \n Santa Cruz de Rosales";
+            ladasdisponibles[38, 2] = "Chihuahua";
+
+            ladasdisponibles[39, 0] = "648";
+            ladasdisponibles[39, 1] = "Ciudad Camargo \n La Boquilla del Conchos \n La Cruz \n La Perla \n San Francisco de Conchos";
+            ladasdisponibles[39, 2] = "Chihuahua";
+
+            ladasdisponibles[40, 0] = "667";
+            ladasdisponibles[40, 1] = "Costa Rica \n Culiacan \n Culiacancito \n Ejido El Quemadito \n El Salado \n Estación Rosales \n Guadalupe Victoria \n Higuerasa de Abuya \n Limón de los Ramos \n Oso Viejo \n Pueblos Unidos \n Quila \n Sánchez Celis \n Villa Adolfo López Mateos";
+            ladasdisponibles[40, 2] = "Sinaloa";
+
+            ladasdisponibles[41, 0] = "668";
+            ladasdisponibles[41, 1] = "Ahome \n Alfonso G. Calderon \n Bachomobampo Número Dos \n Bagojo Colectivo Emiliano Zapata \n Cerrillo \n Chihuahuita \n Cohuibampo \n General Chávez Talamantes \n Gustavo Diaz Ordaz \n Higuera de Zaragoza \n Las Grullas Margen Izquierdo \n Los Mochis \n Nueve de Diciembre \n Poblado Número Cinco \n Poblado Número Seis \n Revolucion Mexicana \n San jose de Ahome \n San Miguel Zapotitlan \n Topolobampo";
+            ladasdisponibles[41, 2] = "Sinaloa";
+
+            ladasdisponibles[42, 0] = "669";
+            ladasdisponibles[42, 1] = "El Castillo \n El Habal \n El quelite \n El Recodo \n El Roble \n Escamillas \n Mármol de salcido \n Mazatlán \n Siqueros \n Villa Unión";
+            ladasdisponibles[42, 2] = "Sinaloa";
+
+            ladasdisponibles[43, 0] = "672";
+            ladasdisponibles[43, 1] = "Altara \n Campo Balbuena \n Dautillos \n El Castillo \n El Portero de Sataya \n Navolato \n Villa Angel F ";
+            ladasdisponibles[43, 2] = "Sinaloa";
+
+            ladasdisponibles[44, 0] = "673";
+            ladasdisponibles[44, 1] = "Benito Juarez \n Cerro Agudo \n Guamuchil \n Mocorito";
+            ladasdisponibles[44, 2] = "Sinaloa";
+
+            ladasdisponibles[45, 0] = "687";
+            ladasdisponibles[45, 1] = "Adolfo Ruiz Cortines \n Alfonso G. Calderon Velarde \n Bachoco \n Batamote \n Corerepe \n Cubilete \n Cubiri de Portelas \n El Burrion \n El Cerro Cabezón \n El Huitussi \n El Pitahayal \n Estación Bamoa \n Estación Capomas \n Estación Naranjo \n Gabriel Leyva Solano \n Genaro Estrada \n Guasave \n Juan Jose Rios \n La Brecha \n La Trinidad \n Las Brisas \n Las Glorias \n Leon Fonseca Estacion \n Maripa \n Mezquite Alto \n Nio \n Palos Blancos \n Portugues de Galvez \n Sinaloa de Leyva \n Tamazula";
+            ladasdisponibles[45, 2] = "Sinaloa";
+
+            ladasdisponibles[46, 0] = "694";
+            ladasdisponibles[46, 1] = "Agua Caliente de Garate \n Agua Verde \n cacalotan \n Chametla \n Concordia \n El Huajote \n El Pozole \n El Verde \n Los Pozos \n Potrerillos \n Rosario";
+            ladasdisponibles[46, 2] = "Sinaloa";
+
+            ladasdisponibles[47, 0] = "695";
+            ladasdisponibles[47, 1] = "Cristo Rey \n Escuinapa \n Isla del Bosque \n La Concha \n Ojo de Agua de Palmillas \n Teacapan";
+            ladasdisponibles[47, 2] = "Sinaloa";
+
+            ladasdisponibles[48, 0] = "696";
+            ladasdisponibles[48, 1] = "Cosala \n Coyotitan \n El Bolillo \n Estacion Dimas \n La Cruz \n Piaxtla de Arriba \n Potrerillo del Norote \n San Ignacio";
+            ladasdisponibles[48, 2] = "Sinaloa";
+
+            ladasdisponibles[49, 0] = "698";
+            ladasdisponibles[49, 1] = "Adolfo López Mateos (El Jahuara) \n Camajoa \n Charay \n Choix \n El Fuerte \n Mochicahui Pueblo \n San Blas";
+            ladasdisponibles[49, 2] = "Sinaloa";
+
 
             return ladasdisponibles;
         }
