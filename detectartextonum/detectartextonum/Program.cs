@@ -16,8 +16,9 @@ namespace detectartextonum
             {
                 Console.WriteLine("Ingrese el texto o numero:");
                 string texto = Console.ReadLine();
+                string nuevotexto = texto.Replace("\t","");
 
-                mensaje(texto);
+                mensaje(nuevotexto);
 
                 try
                 {
@@ -51,13 +52,13 @@ namespace detectartextonum
             //Regex para telefono con dos guiones
             Regex telefonoguion2 = new Regex(@"^[0-9]{3}[-][0-9]{3}[-]([0-9]{4})$");
             //Regex para texto sin simbolos
-            Regex textos = new Regex(@"^[a-zA-Z ]+$");
+            Regex textos = new Regex(@"^[0-9a-zA-Z ]+$");
             //Regex para texto que representa direcciones
-            Regex direccion = new Regex(@"(^[a-zA-Z])([#. 0-9a-zA-ZÀ-ÿÑñ,-]+$)");
+            Regex direccion = new Regex(@"(^[a-zA-Z][ 0-9a-zA-ZÀ-ÿÑñ-]+[.#\-][ 0-9a-zA-ZÀ-ÿÑñ-]+$)");
             //Regex para simbolos
-            Regex simbolos = new Regex(@"[`~!@#$%^&*()_°¬|+\-=?¡¿;:',\.<>\{\}\[\]\\\/'\u0022']");
+            Regex simbolos = new Regex(@"[`¡¿~´¨!@#$%^&*()_°¬|+\-=?¡¿;:',\.<>\{\}\[\]\\\/'\u0022']");
             //Regex para ecuaciones
-            Regex ecuacion = new Regex(@"^(([A-z][A-z0-9_]+)( )?(=)( )?([A-z]+['\+','\-']{2}|([A-z0-9_]+)([\+\-*/])([A-z0-9_]+))+)$");
+            Regex ecuacion = new Regex(@"^(([A-z]([A-z0-9_]+)?)( )?(=)( )?([A-z]+['\+','\-']{2}|([A-z0-9_]+)([\+\-*/])([A-z0-9_]+))+)$");
 
             int caracteres = texto.Length;
             string[,] ladaarreglo = llenarlada();
