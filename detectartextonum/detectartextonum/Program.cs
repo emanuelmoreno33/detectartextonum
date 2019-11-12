@@ -52,7 +52,7 @@ namespace detectartextonum
             //Regex para telefono con dos guiones
             Regex telefonoguion2 = new Regex(@"^[0-9]{3}[-][0-9]{3}[-]([0-9]{4})$");
             //Regex para texto sin simbolos
-            Regex textos = new Regex(@"^[0-9a-zA-Z ]+$");
+            Regex textos = new Regex(@"^[0-9a-zA-ZÀ-ÿÑñ ]+$");
             //Regex para texto que representa direcciones
             Regex direccion = new Regex(@"(^[a-zA-Z][ 0-9a-zA-ZÀ-ÿÑñ-]+[.#\-][ 0-9a-zA-ZÀ-ÿÑñ-]+$)");
             //Regex para simbolos

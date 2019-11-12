@@ -5,3 +5,10 @@ C:\Users\terre\source\repos\detectartextonum\detectartextonum\obj\Debug\detectar
 C:\Users\terre\source\repos\detectartextonum\detectartextonum\obj\Debug\detectartextonum.csproj.CoreCompileInputs.cache
 C:\Users\terre\source\repos\detectartextonum\detectartextonum\obj\Debug\detectartextonum.exe
 C:\Users\terre\source\repos\detectartextonum\detectartextonum\obj\Debug\detectartextonum.pdb
+D:\Usuarios\Emanuel\Documentos\github\detectartextonum\detectartextonum\detectartextonum\bin\Debug\detectartextonum.exe.config
+D:\Usuarios\Emanuel\Documentos\github\detectartextonum\detectartextonum\detectartextonum\bin\Debug\detectartextonum.exe
+D:\Usuarios\Emanuel\Documentos\github\detectartextonum\detectartextonum\detectartextonum\bin\Debug\detectartextonum.pdb
+D:\Usuarios\Emanuel\Documentos\github\detectartextonum\detectartextonum\detectartextonum\obj\Debug\detectartextonum.csprojAssemblyReference.cache
+D:\Usuarios\Emanuel\Documentos\github\detectartextonum\detectartextonum\detectartextonum\obj\Debug\detectartextonum.csproj.CoreCompileInputs.cache
+D:\Usuarios\Emanuel\Documentos\github\detectartextonum\detectartextonum\detectartextonum\obj\Debug\detectartextonum.exe
+D:\Usuarios\Emanuel\Documentos\github\detectartextonum\detectartextonum\detectartextonum\obj\Debug\detectartextonum.pdb
