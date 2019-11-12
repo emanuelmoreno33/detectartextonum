@@ -58,7 +58,9 @@ namespace detectartextonum
             //Regex para simbolos
             Regex simbolos = new Regex(@"[`¡¿~´¨!@#$%^&*()_°¬|+\-=?¡¿;:',\.<>\{\}\[\]\\\/'\u0022']");
             //Regex para ecuaciones
-            Regex ecuacion = new Regex(@"^(([A-z]([A-z0-9_]+)?)( )?(=)( )?([A-z]+['\+','\-']{2}|([A-z0-9_]+)([\+\-*/])([A-z0-9_]+))+)$");
+            Regex ecuacion = new Regex(@"^([A-z]([A-z0-9_]+)?)( )?(=)( )?([A-z]+['\+','\-']{2}|([A-z0-9_]+)(([\+\-*/])([A-z0-9_]+))+)$");
+            //Regex para operaciones
+            Regex operacion = new Regex(@"([0-9]+([.][0-9]+)?[\+\-*/])+[0-9]+([.][0-9]+)?([=][A-Za-z0-9]+)?");
 
             int caracteres = texto.Length;
             string[,] ladaarreglo = llenarlada();
@@ -113,6 +115,8 @@ namespace detectartextonum
                 Match textoconsimbolo = simbolos.Match(texto);
                 //ecuacion matematica
                 Match ecuaciones = ecuacion.Match(texto);
+
+            Match operaciones = operacion.Match(texto);
                 
                 if (numerosvalidos.Success)
                 {
@@ -130,6 +134,10 @@ namespace detectartextonum
                 {
                     Console.WriteLine("Es una ecuacion matematica");
                 }
+                else if(operaciones.Success)
+                {
+                Console.WriteLine("Es una operacion matematica");
+            }
                 else if (textoconsimbolo.Success)
                 {
                     Console.WriteLine("Es un texto con simbolos");
