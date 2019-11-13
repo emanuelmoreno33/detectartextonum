@@ -30,3 +30,5 @@ Las ladas de estados seran
 * Baja california
 * Baja california sur
 * Sonora
+* Sinaloa
+* Chihuahua

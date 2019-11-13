@@ -18,9 +18,16 @@ namespace detectartextonum
                 string texto = Console.ReadLine();
                 string textosintab = texto.Replace("\t", "");
                 string nuevotexto = textosintab.Replace("\n", "");
+                int caracteres = nuevotexto.Length;
 
-                mensaje(nuevotexto);
-
+                if (caracteres < 254)
+                {
+                    mensaje(nuevotexto);
+                }
+                else
+                {
+                    Console.WriteLine("LLegaste al maximo, no se puede realizar operacion");
+                }
                 try
                 {
                     Console.WriteLine("\n Desea continuar? (Y/otra letra)");
@@ -59,7 +66,7 @@ namespace detectartextonum
             //Regex para simbolos
             Regex simbolos = new Regex(@"[`¡¿~´¨!@#$%^&*()_°¬|+\-=?¡¿;:',\.<>\{\}\[\]\\\/'\u0022']");
             //Regex para ecuaciones
-            Regex ecuacion = new Regex(@"^([A-z]([A-z0-9_]+)?)( )?(=)( )?([A-z]+['\+','\-']{2}|([A-z_]+|[0-9]+([.][0-9]+)?)(([\+\-*/\^])([A-z_]+|[0-9]+([.][0-9]+)?))+)$");
+            Regex ecuacion = new Regex(@"^([A-z]([A-z0-9_]+)?)( )?(=)( )?([A-z]+['\+','\-']{2}|([\-\+])?([A-z_]+|[0-9]+([.][0-9]+)?)(([\+\-*/\^])([A-z_]+|[0-9]+([.][0-9]+)?))+)$");
             //Regex para operaciones
             Regex operacion = new Regex(@"^([0-9]+([.][0-9]+)?[\+\-*/\^])+[0-9]+([.][0-9]+)?([=][A-Za-z0-9]+)?$");
 
