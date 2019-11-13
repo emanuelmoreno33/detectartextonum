@@ -16,7 +16,8 @@ namespace detectartextonum
             {
                 Console.WriteLine("Ingrese el texto o numero:");
                 string texto = Console.ReadLine();
-                string nuevotexto = texto.Replace("\t","");
+                string textosintab = texto.Replace("\t", "");
+                string nuevotexto = textosintab.Replace("\n", "");
 
                 mensaje(nuevotexto);
 
@@ -58,9 +59,9 @@ namespace detectartextonum
             //Regex para simbolos
             Regex simbolos = new Regex(@"[`¡¿~´¨!@#$%^&*()_°¬|+\-=?¡¿;:',\.<>\{\}\[\]\\\/'\u0022']");
             //Regex para ecuaciones
-            Regex ecuacion = new Regex(@"^([A-z]([A-z0-9_]+)?)( )?(=)( )?([A-z]+['\+','\-']{2}|([A-z_]+|[0-9]+([.][0-9]+)?)(([\+\-*/])([A-z_]+|[0-9]+([.][0-9]+)?))+)$");
+            Regex ecuacion = new Regex(@"^([A-z]([A-z0-9_]+)?)( )?(=)( )?([A-z]+['\+','\-']{2}|([A-z_]+|[0-9]+([.][0-9]+)?)(([\+\-*/\^])([A-z_]+|[0-9]+([.][0-9]+)?))+)$");
             //Regex para operaciones
-            Regex operacion = new Regex(@"^([0-9]+([.][0-9]+)?[\+\-*/])+[0-9]+([.][0-9]+)?([=][A-Za-z0-9]+)?$");
+            Regex operacion = new Regex(@"^([0-9]+([.][0-9]+)?[\+\-*/\^])+[0-9]+([.][0-9]+)?([=][A-Za-z0-9]+)?$");
 
             int caracteres = texto.Length;
             string[,] ladaarreglo = llenarlada();
@@ -145,7 +146,7 @@ namespace detectartextonum
                 
                 else
                 {
-                    Console.WriteLine("No identificado");
+                    Console.WriteLine("¡Texto invalido, no ingreses tabs o enter sin texto!");
                 }
 
             }
